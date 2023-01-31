@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>opacity</title>
+    <style>
+        .i1{
+            width: 100px;
+            position: relative;
+
+        }
+
+        .y{
+            width:300px;
+            display: block;
+            height: auto;
+        }
+
+        .overplay{
+            width: 300px;
+            height: 400px;
+            background-color: aqua;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .5s;
+            position: absolute;
+        }
+
+        .i1:hover .overplay{
+            opacity: 1;
+        }
+
+        .content{
+            color: black;
+            font-size: medium;
+            top:45%;
+            bottom: 27%;
+        }
+
+        .i2{
+            width: 100px;
+            position: relative;
+        }
+
+        .u{
+            width:300px;
+            display: block;
+            height: auto;
+        }
+
+        .overplay2{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .i2:hover .u{
+            opacity: .5;
+        }
+
+        .i2:hover.overplay
+        {
+            opacity: 1;
+        }
+
+        .content2{
+            background-color: black;
+            color:black;
+            font-size: medium;
+            padding: 16px 32px;
+
+        }
+
+        .i3{
+            width: 100px;
+            position: relative;
+        }
+
+        .i{
+            width:300px;
+            display: block;
+            height: auto;
+        }
+
+        .i3:hover .overplay3{
+            bottom: 0;
+            height: 350px;
+        }
+
+        .content3{
+            color: aliceblue;
+            font-size: medium;
+            position: relative;
+            top: 50%;
+        bottom:50%;
+        left:30%;
+        }
+
+        .i{
+            width: 300px;
+            display: block;
+            height: auto;
+        }
+
+        .overplay3{
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: blue;
+            overflow: hidden;
+            width: 300px;
+            height: 0;
+            transition: .5s ease;
+
+        }
+
+        
+
+
+        </style>
+
+        <body>
+            <h1>HOVER EFFECT</h1>
+        <div class="i1">
+            <img src="C:\Users\student\Downloads/k1.png" class="y"> 
+            <div class="overplay">
+            <div class="content">THIS IS A CARTOON</div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="i2">
+            <img src="C:\Users\student\Downloads/k1.png" class="u"> 
+            <div class="overplay2">
+                <div class="content2">THIS IS A CARTOON</div>
+            </div>
+        </div>
+        <div class="i3">
+            <img src="C:\Users\student\Downloads/k1.png" class="i"> 
+            <div class="overplay3">
+                <div class="content3">THIS IS A CARTOON</div>
+            </div>
+        </div>
